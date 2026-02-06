@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d1cvcx24rc3b3"]
+
+[ext_resource type="PackedScene" uid="uid://d1q2la6v5u0ff" path="res://Kenney Assets/Models/FBX format/rock-large.fbx" id="1_rupba"]
+[ext_resource type="PackedScene" uid="uid://dajphbdprib21" path="res://Kenney Assets/Models/FBX format/rock-small.fbx" id="2_bnx0d"]
+[ext_resource type="PackedScene" uid="uid://cy5qaaj5petai" path="res://Kenney Assets/Models/FBX format/rock-wide.fbx" id="3_o33tv"]
+
+[node name="Rocks" type="Node3D" unique_id=1956040443]
+
+[node name="rock-large" parent="." unique_id=560615079 instance=ExtResource("1_rupba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14507651, 0, 0.03214073)
+
+[node name="rock-small" parent="rock-large" unique_id=34924100 instance=ExtResource("2_bnx0d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.90328157, 0, 0.6276953)
+
+[node name="rock-wide" parent="rock-large" unique_id=1112800273 instance=ExtResource("3_o33tv")]
+transform = Transform3D(0.89427143, 0, 0.447525, 0, 1, 0, -0.447525, 0, 0.89427143, 1.2651995, 0, -0.56761897)

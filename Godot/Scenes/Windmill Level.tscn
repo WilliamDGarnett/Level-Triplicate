@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://duquin3l574yw"]
+
+[ext_resource type="PackedScene" uid="uid://c4aw4ffyh4xtn" path="res://Scenes/windmill.tscn" id="1_hnhil"]
+[ext_resource type="PackedScene" uid="uid://d1cvcx24rc3b3" path="res://Scenes/rocks.tscn" id="2_qgnsy"]
+[ext_resource type="PackedScene" uid="uid://d2lcv5mmtr6rg" path="res://Kenney Assets/Models/FBX format/cart-high.fbx" id="3_2ifm1"]
+[ext_resource type="PackedScene" uid="uid://c32yptpkmdqds" path="res://Kenney Assets/Models/FBX format/tree-crooked.fbx" id="4_cxnil"]
+[ext_resource type="PackedScene" uid="uid://cht4m7ujvap6r" path="res://Kenney Assets/Models/FBX format/tree-high-crooked.fbx" id="5_rymx7"]
+[ext_resource type="PackedScene" uid="uid://dsscltpqcqp3i" path="res://Kenney Assets/Models/FBX format/tree-high.fbx" id="6_engd6"]
+[ext_resource type="PackedScene" uid="uid://cna6yh7yyicv8" path="res://Kenney Assets/Models/FBX format/tree.fbx" id="7_cvy5l"]
+
+[node name="Root" type="Node3D" unique_id=1467318349]
+
+[node name="Windmill" parent="." unique_id=1545043981 instance=ExtResource("1_hnhil")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Rocks" parent="." unique_id=1956040443 instance=ExtResource("2_qgnsy")]
+transform = Transform3D(-0.9455583, 0, 0.32545257, 0, 1, 0, -0.32545257, 0, -0.9455583, 0.34852314, 0, -1.3996266)
+
+[node name="cart-high" parent="." unique_id=1993131072 instance=ExtResource("3_2ifm1")]
+transform = Transform3D(-0.7511374, 0, -0.6601459, 0, 1, 0, 0.6601459, 0, -0.7511374, 3.5583372, 0, -2.0807347)
+
+[node name="tree-crooked" parent="." unique_id=968727082 instance=ExtResource("4_cxnil")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1878252, 0, -4.1532755)
+
+[node name="tree-high-crooked" parent="." unique_id=1302403191 instance=ExtResource("5_rymx7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48191643, 0, -6.248664)
+
+[node name="tree-high" parent="." unique_id=291596035 instance=ExtResource("6_engd6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1798048, 0, -3.948516)
+
+[node name="tree" parent="." unique_id=99173335 instance=ExtResource("7_cvy5l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6288347, 0, -5.240168)

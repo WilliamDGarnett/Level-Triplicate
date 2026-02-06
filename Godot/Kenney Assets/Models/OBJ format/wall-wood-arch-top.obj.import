@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3bia57u2rcs8"
+path="res://.godot/imported/wall-wood-arch-top.obj-4797c852440095008b630643f60c91fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-wood-arch-top.obj-4797c852440095008b630643f60c91fd.mesh"]
+
+source_file="res://Kenney Assets/Models/OBJ format/wall-wood-arch-top.obj"
+dest_files=["res://.godot/imported/wall-wood-arch-top.obj-4797c852440095008b630643f60c91fd.mesh", "res://.godot/imported/wall-wood-arch-top.obj-4797c852440095008b630643f60c91fd.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
