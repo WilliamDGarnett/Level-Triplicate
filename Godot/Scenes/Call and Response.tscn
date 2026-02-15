@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bgiykjjlxyrfb"]
+
+[ext_resource type="Script" uid="uid://ca2j33yy7wqpd" path="res://Scripts/Caller.gd" id="1_0k1u3"]
+[ext_resource type="Script" uid="uid://cdcm6hg3npqhq" path="res://Scenes/Receiver.gd" id="2_noh4d"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1kwiu"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_u4wql"]
+
+[node name="Root" type="Node3D" unique_id=695986853]
+
+[node name="Caller" type="MeshInstance3D" parent="." unique_id=184834566 node_paths=PackedStringArray("receiver")]
+mesh = SubResource("BoxMesh_1kwiu")
+script = ExtResource("1_0k1u3")
+receiver = NodePath("../Receiver")
+
+[node name="Receiver" type="MeshInstance3D" parent="." unique_id=919149482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1611261, 0, 0)
+mesh = SubResource("SphereMesh_u4wql")
+script = ExtResource("2_noh4d")
