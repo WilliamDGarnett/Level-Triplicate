@@ -1,3 +1,21 @@
 [gd_scene format=3 uid="uid://d2a1ax5lcl5to"]
 
+[ext_resource type="Script" uid="uid://rr826egm4wgy" path="res://Scripts/proto_controller.gd" id="1_i04dx"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_8pvmw"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vnucn"]
+
 [node name="Root" type="Node3D" unique_id=1467318349]
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=1522933623]
+transform = Transform3D(114.987595, 0, 0, 0, -3.4367647e-06, 3.9000015, 0, -78.62401, -1.7047446e-07, 0, 0, 0)
+mesh = SubResource("QuadMesh_8pvmw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=47653335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_vnucn")
+script = ExtResource("1_i04dx")
+
+[node name="Camera3D" type="Camera3D" parent="MeshInstance3D" unique_id=1241874287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.39999998)
